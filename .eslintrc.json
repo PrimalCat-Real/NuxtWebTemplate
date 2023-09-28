@@ -1,0 +1,46 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:vue/vue3-essential"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "vue"
+    ],
+    "rules": {
+        "indent": [
+            "error"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "vue/multi-word-component-names": ["error", {
+            "ignores": ["default", "index"]
+        }]
+    },
+    "globals": {
+        "useColorMode": true,
+        "useTestStore": true,
+        "onMounted": true,
+        "watch": true,
+        "useI18n": true,
+        "computed": true,
+        "useAsyncGql": true,
+        "useMouse": true
+    }
+}
